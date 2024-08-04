@@ -1,0 +1,13 @@
+name: Staging CD
+
+on:
+  push:
+    branches:
+    - idp-stg
+
+jobs:
+  cd:
+    uses: moneYOUnion/devops-pipelines/.github/workflows/staging-ecs.yml@master
+    with:
+      SERVICE_NAME: ${{vars.SERVICE_NAME}}
+    secrets: inherit
