@@ -24,7 +24,7 @@ jobs:
       id: upload-ecr
       env:
           REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-          REPOSITORY: idp-${{vars.SERVICE_NAME}}-microservice
+          REPOSITORY: ${{vars.SERVICE_NAME}}
           IMAGE_TAG: latest
       run: |
           docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
