@@ -2,7 +2,7 @@ name: Build and Push Docker Image to ECR
 on:
   push:
     branches:
-      - idp-stg
+      - master
 jobs:
   build-and-push:
     runs-on: ubuntu-latest
