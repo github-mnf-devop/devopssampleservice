@@ -4,6 +4,7 @@ metadata:
   name: devopssampleservice
   annotations:
     github.com/project-slug: github-mnf-devop/devopssampleservice
+    backstage.io/techdocs-ref: value
 spec:
   type: other
   lifecycle: unknown
